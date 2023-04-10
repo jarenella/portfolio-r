@@ -5,7 +5,7 @@ const logo = "https://cdn-icons-png.flaticon.com/512/2579/2579272.png";
 function NavBar() {
     return (
         <header className="header">
-            <img id="navbar-icon" src={logo} className="App-logo" alt="logo" />
+            <a href=" "><img id="navbar-icon" src={logo} className="App-logo" alt="logo" /></a>
             <nav class="navbar">
                 <a className="navbar-btn" href="test">Home</a>
                 <a className="navbar-btn" href="test">Projects</a>
