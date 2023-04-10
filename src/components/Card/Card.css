@@ -1,0 +1,40 @@
+.card-header, .card-body {
+    color: white;
+    text-align: center;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.card-header {
+    padding: 10%;
+    background-color: rgb(0, 0, 0, .1);
+    border-bottom: 1px solid rgb(22, 22, 24);;
+    font-size: 250%;
+}
+
+.card-body {
+    padding: 10%;
+}
+
+/* Make sure that a:link and a:visited come before a:hover, and a:active comes last. This is essential to the cascading of the stylesheet. */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.card {
+    margin: 1vmin;
+    border-radius: 10px;
+    width: 350px;
+    aspect-ratio: 5 / 7;
+    background-color: rgb(39 39 42);
+}
+
+/* width becomes responsively 75% of screen width as opposed to statically 350px when we go under 600px in screen width */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 75%;
+    }
+}
+
+.card-div {
+    height: 100%;
+}

@@ -8,3 +8,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.card-holder {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
