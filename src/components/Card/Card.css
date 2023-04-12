@@ -25,7 +25,20 @@ a:link, a:visited, a:hover, a:active {
     border-radius: 10px;
     width: 350px;
     aspect-ratio: 5 / 7;
-    background-color: rgb(39 39 42);
+    /* background-color: rgb(39 39 42); */
+    background: rgb(87,87,89);
+    background: linear-gradient(318deg, rgb(39, 37, 39) 0%, rgba(58,58,62,1) 22%, rgba(39,39,42,1) 67%, rgba(39,39,42,1) 100%);
+    background-size: 500%;
+    background-position: 0% 0%;
+    transition: background-position 350ms ease;
+}
+
+.card:hover {
+    background-position: 100% 100%;
+    box-shadow:
+    0 0 30px 15px rgb(255, 255, 255, .05),  /* inner white */
+    0 0 50px 30px rgb(255, 0, 255, .05), /* middle magenta */
+    0 0 70px 35px rgb(0, 255, 255, .05); /* outer cyan */
 }
 
 /* width becomes responsively 75% of screen width as opposed to statically 350px when we go under 600px in screen width */
