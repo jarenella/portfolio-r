@@ -7,10 +7,10 @@ function NavBar() {
         <header className="header">
             <a href=" "><img id="navbar-icon" src={logo} className="App-logo" alt="logo" /></a>
             <nav class="navbar">
-                <a className="navbar-btn" href="test">Home</a>
+                <a className="navbar-btn" href="/">Home</a>
                 <a className="navbar-btn" href="test">Projects</a>
                 <a className="navbar-btn" href="test">About</a>
-                <a className="navbar-btn" href="test">Contact</a>
+                <a className="navbar-btn" href="contact">Contact</a>
             </nav>
         </header>
     )
