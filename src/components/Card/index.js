@@ -6,7 +6,7 @@ function Card(props) {
 
     return (
         <section className="card">
-            <a href="test" className="card-a">
+            <a href="project/testname" className="card-a">
                 <div className="card-div">
                     <h1 className="card-header">AUTO MAILER</h1>
                     <p className="card-body">{message}</p>

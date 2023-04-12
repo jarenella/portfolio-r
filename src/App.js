@@ -1,20 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import './reset.css';
+
+import Home from "./pages/Home";
+import Project from "./pages/Project";
+
 import Header from './components/Header';
-import Card from './components/Card';
 import Bumper from './components/Bumper';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Bumper/>
-      <div className="card-holder">
-        <Card message={"how are u?"}/>
-        <Card message={"Lorum ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}/>
-        <Card message={"another message for the purpose of testing"}/>
-      </div>
-    </div>
+    <Router>
+      <>
+        <div className="App">
+          <Header />
+          <Bumper />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project/:projectName" element={<Project />} />
+          </Routes>
+        </div>
+      </>
+    </Router>
   );
 }
 
