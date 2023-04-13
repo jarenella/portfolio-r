@@ -9,7 +9,7 @@ function NavBar() {
             <nav class="navbar">
                 <a className="navbar-btn" href="/">Home</a>
                 <a className="navbar-btn" href="test">Projects</a>
-                <a className="navbar-btn" href="test">About</a>
+                <a className="navbar-btn" href="about">About</a>
                 <a className="navbar-btn" href="contact">Contact</a>
             </nav>
         </header>

@@ -1,0 +1,11 @@
+.bar-title, .bar-body {
+    color: white;
+}
+
+.bar-bg {
+    width: 100%;
+    background-color: rgb(39, 39, 42);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 500px;
+}
